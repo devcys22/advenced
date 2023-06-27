@@ -13,3 +13,8 @@ begin_end_level2
 <img src ="https://github.com/devcys22/advenced/assets/78769412/41de91f9-69cb-4b52-adb4-7b85b5479725">
 begin_exception_level2
 <img src ="https://github.com/devcys22/advenced/assets/78769412/5aa00274-a3e8-4fb3-bb96-ccdbc28490fb">
+
+
+<h2>로그추적기V2</h2>
+레벨링을 통해 로그 추적하기
+<img src ="https://github.com/devcys22/advenced/assets/78769412/95875a02-a69c-4133-9a3f-b37cefdfc18a>
