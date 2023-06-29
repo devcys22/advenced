@@ -5,7 +5,7 @@ import hello.advenced.trace.TraceStatus;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class ThreadLocalLogTrace {
+public class ThreadLocalLogTrace implements LogTrace{
     private static final String START_PREFIX = "-->";
     private static final String COMPLETE_PREFIX = "<--";
     private static final String EX_PREFIX = "<X-";
@@ -13,6 +13,7 @@ public class ThreadLocalLogTrace {
   //  private TraceId traceIdHolder; //traceId 동기화, 동시성 이슈 발생
     private ThreadLocal<TraceId>  traceIdHolder = new ThreadLocal<>();
 
+    @Override
     public TraceStatus begin(String message) {
         syncTraceId();
         TraceId traceId = traceIdHolder.get();
@@ -24,19 +25,19 @@ public class ThreadLocalLogTrace {
 
     private void syncTraceId(){
         TraceId traceId = traceIdHolder.get();
-        if(traceIdHolder == null){
+        if(traceId == null){
             traceIdHolder.set(new TraceId());
         }else{
             traceIdHolder.set(traceId.createNextId());
         }
     }
 
-
+    @Override
     public void end(TraceStatus status) {
         complete(status, null);
     }
 
-
+    @Override
     public void exception(TraceStatus status, Exception e) {
         complete(status, e);
     }
