@@ -18,3 +18,9 @@ begin_exception_level2
 <h2>로그추적기V2</h2>
 레벨링을 통해 로그 추적하기
 <img src ="https://github.com/devcys22/advenced/assets/78769412/95875a02-a69c-4133-9a3f-b37cefdfc18a">
+
+
+<h2>ThreadLocal</h2>
+
+
+<h2>템플릿 메서드 패턴과 콜백 패턴</h2>
