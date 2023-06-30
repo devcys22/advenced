@@ -24,3 +24,5 @@ begin_exception_level2
 
 
 <h2>템플릿 메서드 패턴과 콜백 패턴</h2>
+<h3>템플릿 메서드 패턴</h3>
+<img src="https://github.com/devcys22/advenced/assets/78769412/0bc7eb76-bb57-4b3a-b374-b165efafc678">
