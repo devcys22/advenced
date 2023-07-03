@@ -1,8 +1,5 @@
 package hello.advenced.trace.strategy;
 
-import hello.advenced.trace.template.code.AbstractTemplate;
-import hello.advenced.trace.template.code.SubClassLogic1;
-import hello.advenced.trace.template.code.SubClassLogic2;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
